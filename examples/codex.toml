@@ -1,0 +1,9 @@
+# Replace the paths with your local absolute paths.
+[mcp_servers.douyin]
+command = "node"
+args = ["/absolute/path/to/tt-mcp/dist/index.js"]
+startup_timeout_sec = 15
+tool_timeout_sec = 150
+
+[mcp_servers.douyin.env]
+DOUYIN_CLI_PATH = "/absolute/path/to/tt-minigame-ide-cli/bin/tmg.js"

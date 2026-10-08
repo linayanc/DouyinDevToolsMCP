@@ -1,0 +1,15 @@
+node_modules/
+dist/
+.research/
+*.tgz
+.env
+.env.*
+!.env.example
+coverage/
+.douyin-mcp/
+*.local.*
+*.log
+project.private.config.json
+*.pem
+*.key
+*.ppk

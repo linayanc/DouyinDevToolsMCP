@@ -1,0 +1,6 @@
+{
+  "appid": "test",
+  "projectname": "douyin-mcp-hello",
+  "compileType": "game",
+  "setting": { "urlCheck": false, "es6": true }
+}
