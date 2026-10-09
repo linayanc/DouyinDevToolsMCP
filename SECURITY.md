@@ -10,4 +10,12 @@ Runtime logs are untrusted data and may contain secrets. Common credential patte
 
 Never expose the IDE's debugging port publicly. No credentials, login files, or runtime caches belong in this repository. The server sends only `Runtime.enable` to CDP and does not provide arbitrary code evaluation.
 
-Supported security-fix line: latest 0.1.x. Use [GitHub private vulnerability reporting](https://github.com/linayanc/DouyinDevToolsMCP/security/advisories/new) if it is enabled. Otherwise open an issue asking the maintainer for a private reporting channel without including vulnerability details. Do not post exploit details or secrets in a public issue.
+## Reporting a vulnerability
+
+Supported security-fix line: latest 0.1.x.
+
+Email [1772997956@qq.com](mailto:1772997956@qq.com) with the subject `DouyinDevToolsMCP security report`. Reports in Chinese or English are welcome. Include the affected version, impact, and minimal reproduction steps, with credentials and personal information removed. Please do not post exploit details or secrets in a public issue.
+
+You can also use [GitHub private vulnerability reporting](https://github.com/linayanc/DouyinDevToolsMCP/security/advisories/new) if it is enabled for the repository. General bugs and feature requests belong in [GitHub Issues](https://github.com/linayanc/DouyinDevToolsMCP/issues).
+
+安全漏洞请通过 [1772997956@qq.com](mailto:1772997956@qq.com) 私下联系，说明受影响版本、影响范围和最小复现步骤。请先移除账号、令牌和个人信息，不要在公开 Issue 中披露漏洞利用细节。

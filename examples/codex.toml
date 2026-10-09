@@ -1,7 +1,7 @@
 # Replace the paths with your local absolute paths.
 [mcp_servers.douyin]
 command = "node"
-args = ["/absolute/path/to/tt-mcp/dist/index.js"]
+args = ["/absolute/path/to/DouyinDevToolsMCP/dist/index.js"]
 startup_timeout_sec = 15
 tool_timeout_sec = 150
 

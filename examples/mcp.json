@@ -2,7 +2,7 @@
   "mcpServers": {
     "douyin": {
       "command": "node",
-      "args": ["/absolute/path/to/tt-mcp/dist/index.js"],
+      "args": ["/absolute/path/to/DouyinDevToolsMCP/dist/index.js"],
       "env": {
         "DOUYIN_CLI_PATH": "/absolute/path/to/tt-minigame-ide-cli/bin/tmg.js"
       }

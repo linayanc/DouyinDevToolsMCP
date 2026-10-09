@@ -2,16 +2,32 @@
 
 欢迎中文或英文贡献。最需要的是不同 IDE 版本、macOS、Unity/Wasm 导出包的可复现兼容性证据。
 
+## 参与方式
+
+- 在 [GitHub Issues](https://github.com/linayanc/DouyinDevToolsMCP/issues) 报告问题或提出功能建议。
+- 改进安装说明、工具示例、翻译和排障文档。
+- 提交修复、测试或带真实验证结果的运行时适配。
+
+较大的功能变更建议先用 Issue 说明使用场景，方便讨论接口与支持范围。修正文档或修复明确的问题可以直接提交 Pull Request。
+
+## 开发环境
+
+需要 Node.js 22 或更高版本和 Git。Fork 仓库后克隆你的 Fork，在独立分支上修改：
+
 ```sh
+git clone https://github.com/YOUR_USERNAME/DouyinDevToolsMCP.git
+cd DouyinDevToolsMCP
 npm ci
 npm run verify
 ```
 
 自动化测试无需账号、抖音 IDE 或网络服务，不进行上传。`npm run smoke -- <absolute-project-path>` 是另一个可选的真实 IDE 测试，会打开指定本地项目。
 
+`src/` 存放服务实现，`test/` 存放自动化测试，`examples/` 提供客户端配置和演示工程，`docs/` 存放工具与兼容性文档。
+
 ## 修改约定
 
-- 保持五个首版工具的命名与优先级。新能力先给出真实场景。
+- 保持现有五个工具的接口兼容。新增能力或破坏性变更需说明真实使用场景。
 - CDP 目标必须能关联到指定项目；不能简单附着第一个 page/worker。
 - 只使用参数数组启动官方 CLI，禁止 shell 命令拼接。
 - stdout 是 MCP 协议通道。诊断输出使用 stderr。
@@ -21,10 +37,16 @@ npm run verify
 
 ## Pull request
 
-说明实际问题、结果行为、验证方法与尚未覆盖的平台。确保 `npm run verify` 通过。真实运行时测试和 mock 测试分开报告。
+说明实际问题、结果行为、验证方法与尚未覆盖的平台；有关联 Issue 时附上链接。代码变更需确保 `npm run verify` 通过，真实运行时测试和 mock 测试分开报告。纯文档修改请检查链接和示例命令。
+
+提交信息建议采用 Conventional Commits，例如 `fix: handle simulator reconnection` 或 `docs: clarify Codex setup`。涉及用户使用方式的变更，请同步中英文 README 及相关工具文档。
 
 ## 报告问题
 
 提供系统、Node、IDE、官方 CLI 版本，`--doctor` 的脱敏输出、工具错误码，以及最小复现步骤。不要公开完整 CDP URL 查询串、访问令牌、账号信息、项目私密源代码或预览码。
 
-安全问题见 [SECURITY.md](SECURITY.md)。贡献默认采用项目的 MIT 许可。
+安全问题请按 [SECURITY.md](SECURITY.md) 私下报告。其他交流可联系 [1772997956@qq.com](mailto:1772997956@qq.com)。
+
+## 贡献许可
+
+提交贡献即表示你有权提供这些内容，并同意以本项目的 [MIT License](LICENSE) 授权。请勿提交无权公开的代码、IDE 私有实现、账号数据或项目资源；引用第三方内容时保留适用的许可和来源说明。
